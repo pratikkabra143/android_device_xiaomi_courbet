@@ -10,15 +10,29 @@ TARGET_SUPPORTS_OMX_SERVICE := false
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Set Miuicamera version
-# TARGET_USES_LEICA_HOLY45 := true
+TARGET_USES_LEICA_HOLY45 := true
 
 # Inherit from courbet device
 $(call inherit-product, device/xiaomi/courbet/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common AlphaDroid stuff.
+$(call inherit-product, vendor/alpha/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_courbet
+# AlphaDroid specific settings
+TARGET_ENABLE_BLUR := true
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+# TARGET_BUILD_PACKAGE options:
+# 1 - vanilla (default)
+# 2 - microg
+# 3 - gapps
+TARGET_BUILD_PACKAGE := 3
+TARGET_INCLUDE_MATLOG := false
+ALPHA_BUILD_TYPE := Unofficial
+ALPHA_MAINTAINER := pratikkabra143
+
+# Device Properties
+PRODUCT_NAME := alpha_courbet
 PRODUCT_DEVICE := courbet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 11 Lite 4G
