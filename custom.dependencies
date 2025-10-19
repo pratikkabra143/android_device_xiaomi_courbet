@@ -1,0 +1,17 @@
+[
+  {
+    "remote": "github",
+    "repository": "PixelOS-AOSP/android_hardware_xiaomi",
+    "target_path": "hardware/xiaomi"
+  },
+  {
+    "remote": "github",
+    "repository": "pratikkabra143/kernel_xiaomi_courbet",
+    "target_path": "kernel/xiaomi/sm6150"
+  },
+  {
+    "remote": "github",
+    "repository": "pratikkabra143/proprietary_vendor_xiaomi_courbet",
+    "target_path": "vendor/xiaomi/courbet"
+  }
+]

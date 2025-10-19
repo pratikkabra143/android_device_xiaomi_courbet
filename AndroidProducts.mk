@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_courbet.mk
+    $(LOCAL_DIR)/custom_courbet.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_courbet-user \
-    lineage_courbet-userdebug \
-    lineage_courbet-eng
+    custom_courbet-user \
+    custom_courbet-userdebug \
+    custom_courbet-eng
